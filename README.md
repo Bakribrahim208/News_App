@@ -28,9 +28,9 @@ Screenshots
 
 * **When the default language** - *Arabic*
 <p float="left">
-  <img src="device-2019-04-24-160927.png" width="33%" />
-  <img src="device-2019-04-24-161037.png" width="33%" /> 
-  <img src="device-2019-04-24-161053.png" width="33%" />
+  <img src="device-2019-04-24-160927.png" width="30%" />
+  <img src="device-2019-04-24-161037.png" width="30%" /> 
+  <img src="device-2019-04-24-161053.png" width="30%" />
 </p>
 <p float="left">
   <img src="device-2019-04-24-161110.png" width="45%" />
