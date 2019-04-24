@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">My News</string>
+    <string name="menu_setting">Settings </string>
+    <string name="txt_no_connect">No Connection </string>
+    <string name="txt_no_connect_description">No Internet Connection found
+        .check your connection or try again</string>
+
+    <string name="try_againbtn">TRY AGAIN</string>
+    <string name="sp_text_description">know all the world \n news through the APP</string>
+    <string name="sp_button">START NOW</string>
+
+
+    <string-array name="countries_names">
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Brazil</item>
+        <item>Bulgaria</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item> Czech Republic</item>
+        <item>Egypt</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hong Kong</item>
+        <item>India</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Morocco</item>
+        <item>New Zealand</item>
+        <item>Russia</item>
+        <item>Saudi Arabia</item>
+        <item> South Korea</item>
+        <item>Turkey</item>
+        <item>UAE</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+    </string-array>
+
+
+    <string-array name="countries_values">
+        <item>ar</item>
+        <item>au</item>
+        <item>at</item>
+        <item>bg</item>
+        <item>br</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>cu</item>
+        <item>cz</item>
+        <item>eg</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>gr</item>
+        <item>hk</item>
+        <item>in</item>
+        <item>il</item>
+        <item>it</item>
+        <item>jp</item>
+        <item>ma</item>
+        <item>nz</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>kr</item>
+        <item>tr</item>
+        <item>ae</item>
+        <item>gb</item>
+        <item>us</item>
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="choose_country" translatable="false">choose country</string>
+    <string name="choose_country_description" translatable="false">pick a country you like</string>
+
+</resources>

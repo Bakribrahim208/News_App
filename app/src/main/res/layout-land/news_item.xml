@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+        <variable
+            name="articl"
+            type="com.bakribrahim.newsapp.Models.article" />
+        <variable
+            name="date_array"
+            type="String[]" />
+
+        <variable
+            name="clickListener"
+            type="com.bakribrahim.newsapp.utils.CustomClickListener"/>
+    </data>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/playlist_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_s"
+        android:layout_marginStart="@dimen/margin_s"
+        android:layout_marginTop="@dimen/margin_s"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="@{() ->clickListener.cardClicked(articl)}"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/newslist_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/article_image_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="scrim,article_image" />
+
+            <ImageView
+                android:id="@+id/article_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="h,16:9"
+                app:layout_constraintEnd_toEndOf="@+id/newslist_constraint_layout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/newslist_constraint_layout"
+                app:layout_constraintTop_toTopOf="@+id/newslist_constraint_layout"
+                app:srcCompat="@drawable/guardian_placeholder" />
+
+            <ImageView
+                android:id="@+id/scrim"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:transitionName="logo"
+                android:src="@{articl.urlToImage }"
+                app:layout_constraintBottom_toBottomOf="@+id/article_image"
+                app:layout_constraintEnd_toEndOf="@+id/article_image"
+                app:layout_constraintStart_toStartOf="@+id/article_image"
+                app:layout_constraintTop_toTopOf="@+id/article_image" />
+
+            <TextView
+                android:id="@+id/article_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:letterSpacing="0.05"
+                android:maxLines="3"
+                android:paddingStart="@dimen/margin_s"
+                android:paddingTop="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingBottom="@dimen/margin_s"
+                android:text="@{articl.titile, default=title }"
+                android:textColor="#F5F5F5"
+                android:background="#55000000"
+                android:textSize="@dimen/text_size_apptitle"
+                android:transitionName="text"
+                app:layout_constraintBottom_toBottomOf="@+id/article_image"
+                app:layout_constraintEnd_toEndOf="@+id/article_image"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/article_image" />
+
+            <TextView
+                android:id="@+id/article_trailtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text1"
+                android:background="@color/card_background"
+                android:maxLines="3"
+                android:minLines="3"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingStart="@dimen/margin_s"
+                android:paddingTop="@dimen/margin_s"
+                android:text="@{articl.description}"
+                app:layout_constraintEnd_toEndOf="@+id/article_image"
+                app:layout_constraintStart_toStartOf="@+id/article_image"
+                app:layout_constraintTop_toBottomOf="@+id/article_title" />
+
+            <TextView
+                android:id="@+id/article_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/card_background"
+                android:textColor="@color/color_text1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|start"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingStart="@dimen/margin_s"
+                android:text="@{articl.author}"
+                app:layout_constraintBottom_toBottomOf="@+id/newslist_constraint_layout"
+                app:layout_constraintEnd_toStartOf="@+id/article_section"
+                app:layout_constraintStart_toStartOf="@+id/newslist_constraint_layout"
+                app:layout_constraintTop_toBottomOf="@+id/article_trailtext" />
+
+            <TextView
+                android:id="@+id/article_section"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right|center_vertical|end"
+                android:background="@color/card_background"
+                android:textColor="@color/color_text1"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingStart="@dimen/margin_s"
+                android:text="@{date_array[0]}"
+                android:transitionName="date"
+                app:layout_constraintBottom_toBottomOf="@+id/newslist_constraint_layout"
+                app:layout_constraintEnd_toEndOf="@+id/newslist_constraint_layout"
+                app:layout_constraintTop_toBottomOf="@+id/article_trailtext" />
+
+            <TextView
+                android:id="@+id/article_date"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_l"
+                android:layout_marginRight="@dimen/margin_l"
+                android:background="@drawable/date_background_tint_alpha"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingStart="@dimen/margin_s"
+                android:paddingTop="@dimen/margin_m"
+                android:text="@{date_array[0]}"
+                app:layout_constraintEnd_toEndOf="@+id/newslist_constraint_layout"
+                app:layout_constraintTop_toTopOf="@+id/newslist_constraint_layout" />
+
+            <TextView
+                android:id="@+id/article_time"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/date_background_tint_alpha"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingStart="@dimen/margin_s"
+                android:text="@{date_array[1]}"
+                app:layout_constraintEnd_toEndOf="@+id/article_date"
+                app:layout_constraintStart_toStartOf="@+id/article_date"
+                app:layout_constraintTop_toBottomOf="@+id/article_date" />
+
+            <ImageView
+                android:id="@+id/bookmark_tail"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:cropToPadding="false"
+                android:paddingBottom="@dimen/margin_xl"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@+id/article_date"
+                app:layout_constraintStart_toStartOf="@+id/article_date"
+                app:layout_constraintTop_toBottomOf="@+id/article_time"
+                app:srcCompat="@drawable/bookmark" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

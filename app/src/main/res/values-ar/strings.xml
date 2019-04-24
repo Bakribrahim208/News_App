@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اخباري</string>
+    <string name="menu_setting" >الاعدادات </string>
+
+
+    <string name="choose_country_description"  >اختر الدوله المفضله لديك</string>
+    <string name="choose_country" translatable="false">اختر الدوله</string>
+
+
+    <string name="txt_no_connect"  >لا يوجد اتصال بالانترنت</string>
+    <string name="txt_no_connect_description"  >
+لم يتم العثور على اتصال بالإنترنت
+        تحقق من اتصالك أو حاول مرة أخرى</string>
+
+    <string name="try_againbtn"  >حاول مرة أخري</string>
+
+    <string name="sp_text_description">كل اخبار العالم بين ايديك</string>
+    <string name="sp_button">ابدا الان</string>
+
+
+    <string-array name="countries_names">
+               <item> الأرجنتين </item>
+                 <item> أستراليا </item>
+                 <item> النمسا </item>
+                 <item> بلجيكا </item>
+                 <item> البرازيل </item>
+                 <item> بلغاريا </item>
+                 <item> كندا </item>
+                 <item> الصين </item>
+                 <item> كولومبيا </item>
+                 <item> كوبا </item>
+                 <item> جمهورية التشيك </item>
+                 <item> مصر </item>
+                 <item> فرنسا </item>
+                 <item> ألمانيا </item>
+                 <item> اليونان </item>
+                 <item> هونج كونج </item>
+                  <item> الهند </item>
+                 <item> إسرائيل </item>
+                 <item> إيطاليا </item>
+                 <item> اليابان </item>
+                 <item> المغرب </item>
+                 <item> نيوزلاند</item>
+                 <item> روسيا </item>
+                 <item> المملكة العربية السعودية </item>
+                 <item> كوريا الجنوبية </item>
+                 <item> تركيا </item>
+                 <item> الامارات العربيه المتحده </item>
+                 <item> المملكة المتحدة </item>
+                 <item> الولايات المتحدة </item>
+
+
+
+    </string-array>
+</resources>

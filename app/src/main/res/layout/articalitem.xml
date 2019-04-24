@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+                <ImageView
+                    android:id="@+id/scrim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/guardian_placeholder"
+                    />
+
+            <TextView
+                android:id="@+id/article_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/article_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:id="@+id/article_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_above="@id/article_date"
+                />
+            <TextView
+                android:id="@+id/article_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_above="@id/article_author"
+                android:layout_marginEnd="@dimen/margin_s"
+                android:layout_marginRight="@dimen/margin_s"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:letterSpacing="0.05"
+                android:maxLines="3"
+                android:paddingStart="@dimen/margin_s"
+                android:paddingTop="@dimen/margin_s"
+                android:paddingEnd="@dimen/margin_s"
+                android:paddingBottom="@dimen/margin_s"
+                 android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_l"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
