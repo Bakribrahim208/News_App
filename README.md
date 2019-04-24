@@ -50,7 +50,7 @@ Demo
 
 #### App Specs
 * Minimum SDK 16
-* [Java8](https://java.com/en/download/faq/java8.xml) (in master branch) & [Kotlin](https://kotlinlang.org/) (in kotlin_support branch)
+* [Java8](https://java.com/en/download/faq/java8.xml) (in master branch)
 * [MVVM Architecture](https://github.com/googlesamples/android-architecture) .
 * Android Architecture Components (LiveData, Lifecycle, ViewModel, databinding)
  * [Retrofit 2](https://square.github.io/retrofit/) for API integration.
