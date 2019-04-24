@@ -30,7 +30,7 @@ public class newsDataSource extends PageKeyedDataSource<String, article> {
     //we need to fetch from google-news
     private static final String SITE_NAME = "top-headlines";
 
-    private  static final String API_KEY="bea6c30bb2a54b858fdb44f1d7c14a70";
+    private  static final String API_KEY="";
 
     private static  String country ;
 
