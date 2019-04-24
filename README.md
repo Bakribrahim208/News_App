@@ -25,6 +25,7 @@ Screenshots
 <img src="device-2019-04-24-161417.png" width="90%" /> 
 
 </p>
+
 * **When the default language** - *Arabic*
 <p float="left">
   <img src="device-2019-04-24-160927.png" width="33%" />
