@@ -55,7 +55,7 @@ Demo
 * Minimum SDK 16
 * [Java8](https://java.com/en/download/faq/java8.xml) (in master branch)
 * [MVVM Architecture](https://github.com/googlesamples/android-architecture) .
-* [Android Architecture Components] (https://developer.android.com/topic/libraries/architecture) :are a collection of libraries that help you design robust, testable, and maintainable apps. 
+* ##[Android Architecture Components] (https://developer.android.com/topic/libraries/architecture) :are a collection of libraries that help you design robust, testable, and maintainable apps. 
 Start with classes for managing your UI component lifecycle and handling data persistence.
 - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) is an observable data holder class.  .
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) allows data to survive configuration changes such as screen rotations..
