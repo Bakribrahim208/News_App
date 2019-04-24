@@ -17,11 +17,13 @@ Screenshots
 </p>
 <p float="left">
 <img src="device-2019-04-24-161315.png" width="33%" />
-<img src="device-2019-04-24-161417.png" width="33%" /> 
 <img src="device-2019-04-24-161932.png" width="33%" />
+  <img src="device-2019-04-24-161836.png" width="33%" />
 </p>
-</p>
-<img src="device-2019-04-24-161836.png" width="90%" />
+
+<p float="left">
+<img src="device-2019-04-24-161417.png" width="90%" /> 
+
 </p>
 * **When the default language** - *Arabic*
 <p float="left">
